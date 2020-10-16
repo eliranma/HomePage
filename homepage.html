@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <title>Eliran's Home Page</title>
+</head>
+<body style="
+padding: 10vh 10vw;
+display:flex;
+flex-wrap: wrap;
+justify-content: center;
+background-image: linear-gradient( 110.1deg,  rgba(34,126,34,1) 9.7%, rgba(168,251,60,1) 90.3% );">
+    <header style="
+    justify-content: center;
+    font-size: 3rem;
+    color: azure;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    ">
+        <h1 class="hello"></h1>
+        <script src='./homepage.js'></script>
+    </header>
+<div class='newsfeed'>
+<!-- TODO: newsFeed of random(3 twitter, 3 facebook post, 3 instagram post) -->
+</div>
+
+<div class='searchbox' style='
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+flex-direction: row;
+justify-items: center;
+align-items: center;
+margin:20px 20px;
+'>
+<div class="google">
+<input onchange='searchGoogle()' class='google-search' placeholder='Google Search'>
+    <div class="google-results">
+        GOOGLE RESULTS
+    </div>
+</div>
+<div class='computer'>
+<input onchange='searchComputer()' class='computer search' placeholder='Computer Search'>
+    <div class="computer results">
+        COMPUTER RESULTS
+    </div>
+</div>
+<div class='youtube'>
+<input onchange='searchYoutube()' class= 'youtube search' placeholder='YouTube Search'>
+    <div class="youtube results">
+        YOUTUBE RESULTS
+    </div>
+</div>
+</div>
+</div>
+</body>
