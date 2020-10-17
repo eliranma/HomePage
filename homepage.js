@@ -1,7 +1,6 @@
+const currentTime = new Date();
+const currentHour = currentTime.getHours();
 const greeting = () =>{
-    const currentTime = new Date();
-    const currentHour = currentTime.getHours();
-    var currentGreeting = "";
     if(currentHour >= 5 || currentHour <= 11 ){
         document.querySelector('.hello').innerText = "בוקר טוב אלירן";
         } else if(currentHour >= 12 || currentHour <= 15 ){
@@ -13,8 +12,8 @@ const greeting = () =>{
         }else if(currentHour >= 23 || currentHour <= 4 ){
             document.querySelector('.hello').innerText  = "לילה טוב אלירן";
         }
-    };
-    greeting();
+    }
+    greeting()
 // const searchGoogle = (e) =>{
 // e = document.querySelector(google,search);
 // }
