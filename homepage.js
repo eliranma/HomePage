@@ -1,15 +1,15 @@
 const currentTime = new Date();
 const currentHour = currentTime.getHours();
 const greeting = () =>{
-    if(currentHour >= 5 || currentHour <= 11 ){
+    if(currentHour > 5 || currentHour < 11 ){
         document.querySelector('.hello').innerText = "בוקר טוב אלירן";
-        } else if(currentHour >= 12 || currentHour <= 15 ){
+        } else if(currentHour > 12 || currentHour < 15 ){
             document.querySelector('.hello').innerText = "צהריים טובים אלירן"
-        }else if(currentHour >= 16 || currentHour <= 18 ){
-            document.querySelector('.hello').innerText = "<h1>שלום</h1>";
-        }else if(currentHour >= 19 || currentHour <= 22 ){
+        }else if(currentHour > 16 || currentHour <= 18 ){
+            document.querySelector('.hello').innerText = "אחר הצהריים טובים אלירן";
+        }else if(currentHour > 19 || currentHour < 22 ){
             document.querySelector('.hello').innerText = "ערב טוב אלירן";
-        }else if(currentHour >= 23 || currentHour <= 4 ){
+        }else if(currentHour > 23 || currentHour < 4 ){
             document.querySelector('.hello').innerText  = "לילה טוב אלירן";
         }
     }
